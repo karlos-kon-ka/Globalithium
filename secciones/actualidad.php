@@ -1,5 +1,5 @@
 <?php
-include("../secciones/nav.html");
+include("../secciones/nav.php");
 include("../entrada/bd.php");
 
 

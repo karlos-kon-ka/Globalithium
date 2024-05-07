@@ -1,6 +1,6 @@
 <?php
 
-include("nav.html");
+include("nav.php");
 include("../entrada/bd.php");
 
 

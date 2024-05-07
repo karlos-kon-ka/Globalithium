@@ -1,3 +1,21 @@
+
+<?php
+session_start();
+
+// Verificar si se ha enviado una solicitud POST y el botón "cerrar_sesion" está presente
+if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['cerrar_sesion'])) {
+    // Destruir la sesión actual
+    session_destroy();
+    // Redirigir al usuario a la página de inicio de sesión
+    header("Location: secciones/iniciosesion.php");
+    exit;
+}
+
+include("../entrada/bd.php");
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,8 +33,9 @@
         <ul class="nav-links">
             <li><a href="../index.php">Inicio</a></li>
             <li class="historia"><a href="historia.php">Historia</a></li>
-            <li><a href="momentos.php">Momentos</a></li>
+            <li><a href="conexiones.php">Conexiones</a></li>
             <li><a href="actualidad.php">Actualidad</a></li>
+            <li><a href="usuario.php">Mí usuario</a></li>
             <li class="historia">
                 <a>Registrarse</a>
                 <ul class="sub-menu">

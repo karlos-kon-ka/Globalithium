@@ -1,6 +1,6 @@
 <?php
-session_start();
-include("nav.html");
+
+include("nav.php");
 include("../entrada/bd.php");
 
 if ($_POST) {
@@ -22,7 +22,7 @@ if ($_POST) {
             $_SESSION['logueado'] = true;
 
            
-            echo "<div style='background-color:white; padding: 5px; color: black; border-radius; display:flex; align-items:center'>Ha Iniciado sesión correctamente.</div>";
+            echo "<div style='background-color:white; padding: 5px; color: black; border-radius; display:flex; align-items:center'>Ha Iniciado sesión correctamente. <br> <a href='../index.php'>Ir al Inicio</a></div>";
         } 
     } else {
         echo "Usuario y/o contraseña incorrectos";
@@ -47,7 +47,10 @@ if ($_POST) {
 <body style="background-color:beige;" >
 
 
-
+<div class="registra">
+    <h3>¿No tienes cuenta todavía?</h3>
+    <a href="registro.php">Registrate Ahora.</a>
+</div>
 
 
 
@@ -68,14 +71,39 @@ if ($_POST) {
                         </div>
                         <div class="mb-3">
                             <button  class="btn btn-primary btn-lg" type="submit">Enviar</button> <!-- Aumenté el tamaño del botón -->
-                            <a href="index.html" class="btn btn-info btn-lg">Volver</a> <!-- Aumenté el tamaño del botón -->
+                            <a href="../index.php" class="btn btn-info btn-lg">Volver</a> <!-- Aumenté el tamaño del botón -->
                         </div>
                 </form>  
                 </div>
             </div>
         </div>
     </div>
-    
+    <style>
+        .login{
+            padding: 15px;
+            background: linear-gradient(green white);
+            border-radius: 12px;
+            box-shadow: 1px 1px 10px black;
+        }
+        .registra{
+            padding: 10px;
+            
+            text-align: center;
+            margin: auto;
+        }
+        .registra a{
+            color: lightblue;
+            text-decoration: none;
+            background-color: black;
+            padding: 8px;
+            font-size: 20px;
+            border-radius: 8px;
+        }
+        .registra a:hover{
+            color: white;
+            text-decoration: none;
+        }
+    </style>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>

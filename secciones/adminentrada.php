@@ -1,6 +1,6 @@
 <?php
 include("../entrada/bd.php");
-include("../entrada/nav.html");
+include("nav.html");
 
 if($_POST){
     $titulo = isset($_POST['titulo']) ? $_POST['titulo'] : "";
