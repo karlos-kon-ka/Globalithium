@@ -34,6 +34,20 @@ if(isset($_SESSION['usuario'])) {
     }
 } else {
     // Maneja el caso en el que el usuario no ha iniciado sesión
-    echo "Debe iniciar sesión para ver esta página.";
+    echo "<div class='inicie'>Debe iniciar sesión para ver esta página.
+     <br> <a href='iniciosesion.php'>Inicia Sesión</a> </div>";
 }
 ?>
+<style>
+    a{
+        text-decoration: none;
+        font-size: 20px;
+    }
+    .inicie{
+        text-align: center;
+        padding: 10px;
+        background-color: lightblue;
+        border-radius: 8px;
+        margin: 20px;
+    }
+</style>

@@ -80,9 +80,10 @@ $lista_global = $sentencia->fetchAll(PDO::FETCH_ASSOC);
 </head>
 <body>
 
-<section class="logo-section">
+<section class="hall">
+    <section class="logo-section">
     <div class="container">
-        <img src="imagenes/logo-removebg-preview.png" class="logo" alt="Tu Logo">
+        <img src="imagenes/logo.jpg" class="logo" alt="Tu Logo">
     </div>
 </section>
 
@@ -110,6 +111,7 @@ $lista_global = $sentencia->fetchAll(PDO::FETCH_ASSOC);
      
     </div> 
   </div>
+</section>
 
 
   <div class="containerintro">
@@ -249,26 +251,26 @@ function votarPositivo(contador) {
             <p >
               
               ¡La corrupción en el mundo de las divisas es una verdadera PUTA LOCURA! <br>
-               Es indignante ver malditos sinvergüenzas y entidades manipulan el sistema financiero para su propio beneficio, sin importarles las consecuencias para el resto de la sociedad. ¿Es que acaso no hay límites para la codicia y la falta de ética?
+               Es indignante ver malditos sinvergüenzas y entidades manipulan el sistema financiero para su propio beneficio, ovbiamente sin importarles las consecuencias para el resto. ¿Donde están los límites para estoas actos satánicos?
             </p>
             <p >
               
               Los nombres que vemos a continuación, no son más que peones en el tablero. <br> Por más "Endiosadas" que parezcán sus vidas, no va mas allá que una gigantesca ilusión. <br>
-              Nada en esta vida se escapa a la decepción de la vida. y estas ILUSIONES no son la excepción.
+              Nada escapa a la decepción de la vida. Y estas ILUSIONES no son la excepción.
 
             </p>
             </div>
             <br>
-            <div>
+            
             <div class="slider-container2">
             <div class="slider2">
-                <div class="slide2">
+                   <div class="slide2">
                         <img src="imagenes/puta 1.jpg" alt="Slide 1">
                         <h4> Cristina Kirchner </h4>
                     </div>
-                    <div class="slide2">
-                    <img src="imagenes/guzman.webp" alt="Slide 2">
-                    <h4>Joaquín Guzmán</h4>
+                        <div class="slide2">
+                        <img src="imagenes/guzman.webp" alt="Slide 2">
+                        <h4>Joaquín Guzmán</h4>
                         </div>
                         <div class="slide2">
                             <img src="imagenes/pablo.avif" alt="Slide 3">
@@ -286,7 +288,7 @@ function votarPositivo(contador) {
                             <img src="imagenes/puto3.jpg" alt="Slide 3">
                             <h4>Nayib Bukele</h4>
                         </div>
-        </div>
+        
 </div>
 
             </div>
@@ -329,9 +331,9 @@ function votarPositivo(contador) {
             <p>Vamos a ver. <br> Es de ilusos no darer cuenta la entresijos de
                  la economía de la actualidad. <br> 
                Logicamente. No se limita por las fronteras,
-                ni los enfrentamientos políticos. <br> Diciendo esto , no digo que vayan todos a la una
-                . O al menos en las parte más inferiores de la pirámide. <br>
-            El poder se distribuye de otra manera</p>
+                ni los enfrentamientos políticos. <br> Diciendo esto , no digo que vayan todos a la una. <br>
+                 O al menos en las parte más inferiores de la pirámide. <br>
+            <span>El poder se distribuye de otra manera</span></p>
 
         </div>
         <div class="global-image">
@@ -349,13 +351,13 @@ function votarPositivo(contador) {
     <div class="container-mod">
         <div class="modern-info">
             <h2 class="text-center">Actualidad</h2>
-            <p>En las últimas décadas, Oriente Medio ha sido un escenario de conflictos exacerbados por intereses religiosos, políticos y económicos. La intersección entre el cristianismo e islam ha contribuido a tensiones arraigadas. La influencia judía en Estados Unidos, especialmente en el apoyo a Israel, ha sido significativa, desencadenando conflictos como las guerras árabe-israelíes y el conflicto palestino-israelí. Esta dinámica ha exacerbado las tensiones religiosas y políticas en la región, mientras persiste la lucha por el control, con Israel como punto focal./p>
+            <p>En las últimas décadas, Oriente Medio ha sido un escenario de conflictos exacerbados por intereses religiosos, políticos y económicos. La intersección entre el cristianismo e islam ha contribuido a tensiones arraigadas. La influencia judía en Estados Unidos, especialmente en el apoyo a Israel, ha sido significativa, desencadenando conflictos como las guerras árabe-israelíes y el conflicto palestino-israelí. Esta dinámica ha exacerbado las tensiones religiosas y políticas en la región, mientras persiste la lucha por el control, con Israel como punto focal.
         </div>
         <div class="modern-image">
             <img src="imagenes/judios.jpg" alt="Descripción de la imagen">
         </div>
         <br>
-        <div class="container-mod">
+        <div style="display:flex ; justify-content:center; align-items: center;" class="container-mod">
         <a class="btn btn-primary" href="secciones/actualidad.php">Actualidad</a>
     </div>
     </div>
@@ -386,6 +388,32 @@ function votarPositivo(contador) {
         <a class="btn btn-primary "  href="secciones/conexiones.php">Conexiones</a>
         </div>
 </section>
+<section class="globalization-section3">
+    <div class="container-glo3">
+        <div class="global-info3">
+            <h2>Inicia Sesión </h2>
+            <p>Redgístate para que puedas compartir con nosotros lo que sabes, lo que quieras saber o lo que dudes. <br>
+              Es rápido y sencillo</p>
+            <a href="secciones/registro.php" class="register-link">¡Regístrate y comenta!</a>
+        </div>
+        <div class="global-image2">
+            <img src="imagenes/usuarios.webp" alt="FMI">
+            <img src="imagenes/comen.png" alt="CIA">
+            <img src="imagenes/likes.png" alt="FIFA">
+           
+        </div>
+    </div>
+    <style>
+        .globalization-section3{
+            text-align: center;
+        }
+        .global-info3 p{
+            font-size: 25px;
+            
+        }
+    </style>
+</section>
+
 <footer>
 
 </footer>
